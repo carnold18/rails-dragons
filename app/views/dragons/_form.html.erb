@@ -1,0 +1,13 @@
+<%= form_for @dragon do |f| %>
+
+  <%= f.label :name %>:
+  <%= f.text_field :name %><br />
+
+  <%= f.label :power_type %>:
+  <%= f.text_field :power_type %><br />
+
+  <%= f.collection_select :user_id, User.all, :id, :name  %><br />
+
+  <%= f.submit %>
+  
+<% end %>

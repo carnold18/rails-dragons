@@ -1,0 +1,7 @@
+<h1>Masters Index</h1>
+
+<% @users.each do |user| %>
+	<p>Name: <%= link_to user.name, user %></p>
+<% end %>
+
+<%= link_to "Add Master", new_user_path %>

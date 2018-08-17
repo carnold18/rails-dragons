@@ -1,0 +1,15 @@
+<h1>Dragon Info</h1>
+
+<p>Name: <%= @dragon.name %></p>
+
+<p>Power Type: <%= @dragon.power_type %></p>
+
+<p>Dragon's Master: <%= link_to @dragon.user.name, users_path %></p>
+
+
+<h2>Links</h2>
+
+
+<p><%= link_to "Dragon Index", dragons_path %></p>
+<p><%= link_to "Edit Dragon Info", edit_dragon_path %></p>
+<p><%= link_to 'Destroy', @dragon, method: :delete, data: { confirm: 'Are you sure?' } %></p>

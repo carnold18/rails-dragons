@@ -1,0 +1,11 @@
+<h1>Master Info</h1>
+
+<p>Master Name: <%= @user.name %></p>
+<p>Alias: <%= @user.alias %></p>
+<p>Age: <%= @user.age %></p>
+
+<h2>Links</h2>
+
+<p><%= link_to "Masters Index", users_path %></p>
+<p><%= link_to "Edit User Info", edit_user_path %></p>
+<p><%= link_to 'Destroy', @user, method: :delete, data: { confirm: 'Are you sure?' } %></p>

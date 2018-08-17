@@ -1,0 +1,7 @@
+<h1>Dragon Index</h1>
+
+<% @dragons.each do |dragon| %>
+	<p>Name: <%= link_to dragon.name, dragon %></p>
+<% end %>
+
+<%= link_to "Add Dragon", new_dragon_path %>
